@@ -12,7 +12,7 @@ class Contacts extends Component {
       },
       {
         id: 2,
-        name: "Muhtasim Musfiq Zarab",
+        name: "Maimuna Haque Mou",
         email: "musfiqzarab@iut-dhaka.edu",
         phone: "+8801685055749"
       },
@@ -27,11 +27,11 @@ class Contacts extends Component {
   render() {
     const { contacts } = this.state;
     return (
-      <div>
+      <React.Fragment>
         {contacts.map(contact => (
           <Contact key={contact.id} contact={contact} />
         ))}
-      </div>
+      </React.Fragment>
     );
   }
 }
